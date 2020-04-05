@@ -1,0 +1,238 @@
+/*---- the main ----*/
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	top: 50px;
+}
+
+.btn__list {
+	text-align: center;
+}
+
+.btn__item {
+	background: none;
+	padding: 10px 30px;
+	font-size: 20px;
+	border: solid 1px black;
+	border-radius: 10px;
+	position: relative;
+	margin: 50px 10px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.btn__one {
+	position: relative;
+}
+
+.btn__one::before {
+	content: "";
+	background: blue;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -100%;
+}
+
+.btn__one:hover::before {
+	left: 0;
+	transition: 1s;
+	z-index: -1;
+}
+
+.btn__one:hover {
+	color: white;
+	transition: 1s;
+}
+
+.btn__two {
+	position: relative;
+}
+
+.btn__two::before {
+	content: "";
+	background: blue;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+.btn__two:hover::before {
+	top: 0;
+	transition: 1s;
+	z-index: -1;
+}
+
+.btn__two:hover {
+	color: white;
+	transition: 1s;
+}
+
+.btn__three:hover {
+	color: white;
+	transition: 1s;
+}
+
+.btn__three::before {
+	content: "";
+	background: blue;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -100%;
+	left: 0;
+}
+
+.btn__three:hover::before {
+	top: 0;
+	transition: 1s;
+	z-index: -1;
+}
+
+.btn__three:hover {
+	color: white;
+	transition: 1s;
+}
+
+.btn__four {
+	position: relative;
+}
+
+.btn__four::before {
+	content: "Hi bro";
+	color: white;
+	padding: 10px 0px;
+	background: red;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -100%;
+}
+
+.btn__four:hover::before {
+	left: 0;
+	transition: 1s;
+}
+
+.btn__five:hover {
+	background-color: red;
+	transition: 1s;
+	color: white;
+	font-size: 23px;
+}
+
+.btn__six {
+	position: relative;
+}
+
+.btn__six::before {
+	content: "";
+	background: blue;
+	width: 120%;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+	left: -100%;
+	border-radius: 0 50px 0 0;
+}
+
+.btn__six:hover::before {
+	left: 0;
+	transition: 1s;
+	z-index: -1;
+	top: 0;
+}
+
+.btn__six:hover {
+	color: white;
+	transition: 1s;
+}
+
+.btn__seven {
+	position: relative;
+}
+
+.btn__seven::before {
+	content: "";
+	background: black;
+	width: 115%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -115%;
+	border-radius: 10px 25px 25px 10px;
+}
+
+.btn__seven:hover::before {
+	left: 0;
+	transition: 1s;
+	z-index: -1;
+}
+
+.btn__seven:hover {
+	transition: 1s;
+	color: white;
+}
+
+.btn__eight {
+	position: relative;
+}
+
+.btn__eight::before {
+	content: "";
+	background: black;
+	width: 100%;
+	height: 200%;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: -1;
+	border-radius: 50px 50px 0 0;
+}
+
+.btn__eight:hover::before {
+	top: -90%;
+	transition: 1s;
+}
+
+.btn__eight:hover {
+	transition: 1s;
+	color: white;
+}
+
+@keyframes bouncing {
+	0% { 
+		bottom: 0; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+	}
+	100% { 
+		bottom: 50px; box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1); 
+	}
+}
+
+.btn__nine {
+	animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite  alternate both;
+}
+
+.btn__nine:hover {
+	animation: none;
+	background-color: black;
+	color: white;
+}
+
