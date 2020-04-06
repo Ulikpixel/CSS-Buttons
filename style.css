@@ -18,6 +18,10 @@
 	top: 50px;
 }
 
+h1 {
+	font-family: 'Indie Flower', cursive;
+}
+
 .btn__list {
 	text-align: center;
 }
@@ -31,6 +35,8 @@
 	position: relative;
 	margin: 50px 10px;
 	cursor: pointer;
+	font-family: 'Indie Flower', cursive;
+	font-weight: 700;
 	overflow: hidden;
 }
 
@@ -254,7 +260,7 @@
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	top: -90%;
+	top: -95%;
 	left: 100%;
 }
 
@@ -264,7 +270,7 @@
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	top: 90%;
+	top: 95%;
 	left: -100%;
 }
 
@@ -308,6 +314,7 @@
 	top: 0;
 	left: -90%;
 	transform: rotate(50deg);
+	opacity: 0.8;
 }
 
 .btn__eleven:hover::before{
@@ -320,17 +327,80 @@
 	transition: 2s;
 }
 
-.btn__twelve {
+.btn__thirteen {
 	position: relative;
+	border: none;
+	color: #ff00d0;
+	border-radius: none;
 }
 
-/*.btn__twelve::before {
-	content: "";
-	background: blue;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}*/
+.btn__thirteen:hover {
+	transition: 1s;
+	transition-delay: 1s;
+	color: white;
+	background: #ff00d0;
+	box-shadow: 0 0 10px #ff00d0, 0 0 40px #ff00d0, 0 0 80px #ff00d0;
+}
 
+.btn__thirteen::before {
+	content: "";
+	background: linear-gradient(-100deg, transparent, #ff00d0);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 100%;
+	top: 90%;
+}
+
+.btn__thirteen::after {
+	content: "";
+	background: linear-gradient(-320deg, transparent, #ff00d0);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: -100%;
+	top: -90%;
+}
+
+.line__one {
+	position: absolute;
+	background: linear-gradient(-300deg, transparent, #ff00d0);
+	height: 100%;
+	width: 100%;
+	left: -65%;
+	top: 175%;
+	transform: rotate(-90deg);
+}
+
+.line__two {
+	position: absolute;
+	background: linear-gradient(-280deg, transparent, #ff00d0);
+	height: 100%;
+	width: 100%;
+	left: 65%;
+	top: -180%;
+	transform: rotate(90deg);
+}
+
+
+.btn__thirteen:hover::after {
+	transition: 0.5s;
+	left: 100%;
+}
+
+.btn__thirteen:hover .line__two {
+	top: 150%;
+	transition: 0.5s;
+	transition-delay: 0.5s; 	
+}
+
+.btn__thirteen:hover::before {
+	left: -100%;
+	transition: 0.5s;
+}
+
+.btn__thirteen:hover .line__one {
+	top: -100%;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
