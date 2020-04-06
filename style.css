@@ -236,3 +236,101 @@
 	color: white;
 }
 
+.btn__ten {
+	position: relative;
+	border: none;
+}
+
+.btn__ten:hover {
+	transition: 3s;
+	background: #2196f3;
+	color: white;
+	border: solid 1px #2196f3;
+}
+
+.btn__ten::before {
+	content: "";
+	background: linear-gradient(-100deg, transparent, #2196f3);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -90%;
+	left: 100%;
+}
+
+.btn__ten::after {
+	content: "";
+	background: linear-gradient(-320deg, transparent, #2196f3);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 90%;
+	left: -100%;
+}
+
+@keyframes btn__border-one {
+	0%{
+		left: -95%;
+	}
+	100%{
+		left: 90%;
+	}
+}
+
+.btn__ten:hover::after {
+	animation: btn__border-one 2s infinite  alternate both;
+}
+
+@keyframes btn__border-two {
+	0%{
+		left: 95%;
+	}
+	100%{
+		left: -90%;
+	}
+}
+
+.btn__ten:hover::before {
+	animation: btn__border-two 2s infinite  alternate both;
+}
+
+.btn__eleven {
+	position: relative;
+	border: solid 2px #ff7675;
+}
+
+.btn__eleven::before {
+	content: "";
+	background: #ff7675;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -90%;
+	transform: rotate(50deg);
+}
+
+.btn__eleven:hover::before{
+	left: 100%;
+	transition: 2s;
+}
+
+.btn__eleven:hover {
+	color: #ff7675;
+	transition: 2s;
+}
+
+.btn__twelve {
+	position: relative;
+}
+
+/*.btn__twelve::before {
+	content: "";
+	background: blue;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}*/
+
