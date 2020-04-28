@@ -178,7 +178,7 @@ h1 {
 	content: "";
 	background: black;
 	width: 115%;
-	height: 100%;
+	height: 110%;
 	position: absolute;
 	top: 0;
 	left: -115%;
@@ -186,7 +186,7 @@ h1 {
 }
 
 .btn__seven:hover::before {
-	left: 0;
+	left: -3%;
 	transition: 1s;
 	z-index: -1;
 }
@@ -684,4 +684,79 @@ h1 {
 
 .btn__seventeen:hover::after {
 	left: 7%;
+}
+
+.btn__eighteen {
+ position: relative;
+}
+
+.btn__eighteen::before {
+	content: "";
+	position: absolute;
+	background-image: url(./images/волна.png);
+	width: 30%;
+	height: 30%;
+	
+}
+
+.btn__eighteen {
+	position: relative;
+	color: #ff7221;
+	border: solid 2px #ff7221;
+}
+
+.btn__eighteen span:nth-child(1){
+	content: "";
+	position: absolute;
+	background: #ff7221;
+	width: 100%;
+	height: 91%;
+	left: -34%;
+	top: 200%;
+	transform: rotate(90deg);
+	z-index: -1;
+}
+
+.btn__eighteen span:nth-child(2){
+	content: "";
+	position: absolute;
+	background: #ff7221;
+	width: 100%;
+	height: 91%;
+	left: 1%;
+	top: 200%;
+	transform: rotate(90deg);
+	z-index: -1;
+}
+
+.btn__eighteen span:nth-child(3){
+	content: "";
+	position: absolute;
+	background: #ff7221;
+	width: 100%;
+	height: 91%;
+	left: 36%;
+	top: 230%;
+	transform: rotate(90deg);
+	z-index: -1;
+}
+
+.btn__eighteen:hover {
+	color: white;
+	transition: 1.5s;
+}
+
+.btn__eighteen:hover span:nth-child(1){
+	top: 0;
+	transition: 1.5s;
+}
+
+.btn__eighteen:hover span:nth-child(2){
+	transition: 2.5s;
+	top: 0;
+}
+
+.btn__eighteen:hover span:nth-child(3){
+	transition: 3.5s;
+	top: 0;
 }
